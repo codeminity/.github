@@ -34,6 +34,23 @@ It does not implement HTTP requests itself. Instead, it serves as an internal fo
 
 **Status:** Active development
 
+### 📦 `@codeminity/axios`
+
+A production-ready Axios adapter built on top of `@codeminity/request-core`.
+
+`@codeminity/axios` extends the familiar Axios API with a deterministic request lifecycle layer, providing authentication orchestration, token refresh coordination, retry handling, and request lifecycle events while keeping HTTP transport fully managed by Axios.
+
+**Key capabilities:**
+
+* Axios-compatible API with Codeminity lifecycle integration
+* Authentication lifecycle and token refresh coordination
+* Concurrent refresh protection
+* Configurable retry orchestration
+* Request lifecycle events and error handling
+* TypeScript-first developer experience
+
+**Status:** Active development
+
 More projects and packages are coming soon.
 
 ## Philosophy
