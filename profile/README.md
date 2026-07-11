@@ -16,7 +16,23 @@ Codeminity aims to reduce complexity, encourage reuse, and help developers focus
 
 ## Projects
 
-🚧 Building in public...
+### 📦 `@codeminity/request-core`
+
+A framework-agnostic foundation for building reliable request workflows.
+
+`@codeminity/request-core` provides the core primitives needed to manage complex request flows, including authentication lifecycle, token refresh coordination, retry strategies, and safe async concurrency control.
+
+It does not implement HTTP requests itself. Instead, it serves as an internal foundation for higher-level request adapters and client integrations.
+
+**Key capabilities:**
+
+* Authentication lifecycle management
+* Token expiration and refresh coordination
+* Request retry workflow support
+* Safe concurrency control for async operations
+* Deterministic and composable request primitives
+
+**Status:** Active development
 
 More projects and packages are coming soon.
 
@@ -27,6 +43,8 @@ Build less. Create more.
 ## Contributing
 
 We welcome developers who share our passion for creating better tools and improving the software ecosystem.
+
+If you are interested in contributing, feel free to explore our repositories, open issues, and submit pull requests.
 
 ---
 
