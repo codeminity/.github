@@ -16,42 +16,19 @@ Codeminity aims to reduce complexity, encourage reuse, and help developers focus
 
 ## Projects
 
-### 📦 `@codeminity/request-core`
+All packages live in a single monorepo, [`ts-platform`](https://github.com/codeminity/ts-platform), organized by category. Each category below gets its own table as it grows — see that repo's `ARCHITECTURE.md` for how packages within a category relate to one another.
 
-A framework-agnostic foundation for building reliable request workflows.
+### 🌐 Request Layer
 
-`@codeminity/request-core` provides the core primitives needed to manage complex request flows, including authentication lifecycle, token refresh coordination, retry strategies, and safe async concurrency control.
+Framework-agnostic request infrastructure: authentication lifecycle, token refresh coordination, retry strategies, and safe async concurrency — shared by a family of adapters, one per HTTP client.
 
-It does not implement HTTP requests itself. Instead, it serves as an internal foundation for higher-level request adapters and client integrations.
+| Package | Description | Version |
+| --- | --- | --- |
+| [`@codeminity/request-core`](https://github.com/codeminity/ts-platform/tree/main/packages/request/core) | Framework-agnostic core primitives. Implements no HTTP transport itself — the shared foundation every adapter below builds on. | [![npm](https://img.shields.io/npm/v/@codeminity/request-core.svg)](https://www.npmjs.com/package/@codeminity/request-core) |
+| [`@codeminity/axios`](https://github.com/codeminity/ts-platform/tree/main/packages/request/axios) | Production-ready Axios adapter. Same familiar Axios API, with a deterministic lifecycle layer on top. | [![npm](https://img.shields.io/npm/v/@codeminity/axios.svg)](https://www.npmjs.com/package/@codeminity/axios) |
+| [`@codeminity/fetch`](https://github.com/codeminity/ts-platform/tree/main/packages/request/fetch) | Native `fetch` adapter. Same call signature and resolve/throw contract as `fetch` itself — no added surface to learn. | [![npm](https://img.shields.io/npm/v/@codeminity/fetch.svg)](https://www.npmjs.com/package/@codeminity/fetch) |
 
-**Key capabilities:**
-
-* Authentication lifecycle management
-* Token expiration and refresh coordination
-* Request retry workflow support
-* Safe concurrency control for async operations
-* Deterministic and composable request primitives
-
-**Status:** Active development
-
-### 📦 `@codeminity/axios`
-
-A production-ready Axios adapter built on top of `@codeminity/request-core`.
-
-`@codeminity/axios` extends the familiar Axios API with a deterministic request lifecycle layer, providing authentication orchestration, token refresh coordination, retry handling, and request lifecycle events while keeping HTTP transport fully managed by Axios.
-
-**Key capabilities:**
-
-* Axios-compatible API with Codeminity lifecycle integration
-* Authentication lifecycle and token refresh coordination
-* Concurrent refresh protection
-* Configurable retry orchestration
-* Request lifecycle events and error handling
-* TypeScript-first developer experience
-
-**Status:** Active development
-
-More projects and packages are coming soon.
+More categories and packages are coming soon.
 
 ## Philosophy
 
