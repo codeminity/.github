@@ -30,6 +30,10 @@ Framework-agnostic request infrastructure: authentication lifecycle, token refre
 
 More categories and packages are coming soon.
 
+## Examples
+
+Real, runnable example applications demonstrating how to consume the published `ts-platform` packages as real npm dependencies — see [`ts-platform-examples`](https://github.com/codeminity/ts-platform-examples).
+
 ## Philosophy
 
 Build less. Create more.
