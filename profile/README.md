@@ -1,10 +1,10 @@
 # Codeminity 🚀
 
-An open-source ecosystem for building better software with less complexity.
+Open-source TypeScript packages for HTTP requests and UI components — runtime-agnostic, well-tested, and published to npm as `@codeminity/*`.
 
 ## About
 
-Codeminity creates reusable tools, libraries, and solutions that help developers build software faster, cleaner, and more efficiently.
+Codeminity builds TypeScript libraries that other developers can depend on directly: request infrastructure (auth lifecycle, token refresh, retries) and framework-agnostic UI components (Web Components), all published to npm under the `@codeminity` scope.
 
 We focus on improving developer experience through well-designed, maintainable, and practical open-source projects.
 
@@ -28,11 +28,19 @@ Framework-agnostic request infrastructure: authentication lifecycle, token refre
 | [`@codeminity/axios`](https://github.com/codeminity/ts-platform/tree/main/packages/request/axios) | Production-ready Axios adapter. Same familiar Axios API, with a deterministic lifecycle layer on top. | [![npm](https://img.shields.io/npm/v/@codeminity/axios.svg)](https://www.npmjs.com/package/@codeminity/axios) |
 | [`@codeminity/fetch`](https://github.com/codeminity/ts-platform/tree/main/packages/request/fetch) | Native `fetch` adapter. Same call signature and resolve/throw contract as `fetch` itself — no added surface to learn. | [![npm](https://img.shields.io/npm/v/@codeminity/fetch.svg)](https://www.npmjs.com/package/@codeminity/fetch) |
 
+### 🎨 UI Layer
+
+Framework-agnostic UI primitives built as native Web Components (Lit), styled through CSS custom-property design tokens — usable from Vue, React, Angular, or plain HTML with no wrapper required.
+
+| Package | Description | Version |
+| --- | --- | --- |
+| [`@codeminity/ui-kit-core`](https://github.com/codeminity/ts-platform/tree/main/packages/ui-kit/core) | Framework-agnostic core components, starting with `<cdmt-button>`. Implements no framework bindings itself — the shared foundation any Vue/React/Angular wrapper will build on. | [![npm](https://img.shields.io/npm/v/@codeminity/ui-kit-core.svg)](https://www.npmjs.com/package/@codeminity/ui-kit-core) |
+
 More categories and packages are coming soon.
 
-## Examples
+## Live Demo
 
-Real, runnable example applications demonstrating how to consume the published `ts-platform` packages as real npm dependencies — see [`ts-platform-examples`](https://github.com/codeminity/ts-platform-examples).
+See `@codeminity/ui-kit-core`'s components rendered live, installed from npm exactly as any real consumer would — [`ui-kit-docs`](https://github.com/codeminity/ui-kit-docs) ([live site](https://codeminity.github.io/ui-kit-docs/)).
 
 ## Philosophy
 
