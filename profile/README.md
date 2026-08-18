@@ -34,13 +34,9 @@ Framework-agnostic UI primitives built as native Web Components (Lit), styled th
 
 | Package | Description | Version |
 | --- | --- | --- |
-| [`@codeminity/ui-kit-core`](https://github.com/codeminity/ts-platform/tree/main/packages/ui-kit/core) | Framework-agnostic core components, starting with `<cdmt-button>`. Implements no framework bindings itself — the shared foundation any Vue/React/Angular wrapper will build on. | [![npm](https://img.shields.io/npm/v/@codeminity/ui-kit-core.svg)](https://www.npmjs.com/package/@codeminity/ui-kit-core) |
+| [`@codeminity/ui-kit`](https://github.com/codeminity/ts-platform/tree/main/packages/ui-kit) | Framework-agnostic core components, starting with `<cdmt-button>`. Implements no framework bindings itself — Vue is the first wrapper it ships with. | [![npm](https://img.shields.io/npm/v/@codeminity/ui-kit.svg)](https://www.npmjs.com/package/@codeminity/ui-kit) |
 
 More categories and packages are coming soon.
-
-## Live Demo
-
-See `@codeminity/ui-kit-core`'s components rendered live, installed from npm exactly as any real consumer would — [`ui-kit-docs`](https://github.com/codeminity/ui-kit-docs) ([live site](https://codeminity.github.io/ui-kit-docs/)).
 
 ## Philosophy
 
